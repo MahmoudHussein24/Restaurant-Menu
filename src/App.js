@@ -1,24 +1,43 @@
-import logo from './logo.svg';
+import Pizza from './Pizza/Pizza';
 import './App.css';
+import Beef from './Beef/Beef';
+import Chicken from './Chicken/Chicken';
+import Salad from './Salad/Salad';
+import Fish from './Fish/Fish';
+import Navbar from './Navbar/Navbar';
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Home from './Home/Home';
+import Footer from './Footer/Footer';
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+    <Navbar/>
+
+    <Routes>
+
+      <Route  path='home' element={<Home/>} />
+      <Route  path='Pizza' element={<Pizza/>} />
+      <Route  path='Beef' element={<Beef/>} />
+      <Route  path='Chicken' element={<Chicken/>} />
+      <Route  path='Fish' element={<Fish/>} />
+      <Route  path='Salad' element={<Salad/>} />
+
+    </Routes>
+
+    
+
+  
+    <Footer/>
+    
+    </>
   );
 }
 

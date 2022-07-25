@@ -1,0 +1,11 @@
+.nav{
+    margin-bottom: 60px;
+    z-index: auto !important;
+    position: fixed !important;
+    z-index: 99999;
+
+}
+.Link{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Dancing Script', cursive;
+}
